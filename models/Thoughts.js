@@ -44,7 +44,7 @@ const ThoughtSchema = new Schema (
   }
 )
 
-ThoughtSchema.virtual('reactions').get(function() {
+ThoughtSchema.virtual('reaction').get(function() {
     return this.reactions.reduce((total, reactions) => total + reactions.length + 1, 0)
 })
 

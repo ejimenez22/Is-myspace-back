@@ -1,5 +1,5 @@
-const date = require('moment')
+/*const dateFormat = require('moment')
 
 const date = moment().format("MMMM Do YYYY, HH:mm");
 
-$("#currentDay").text(date);
+$("#currentDay").text(date);*/
