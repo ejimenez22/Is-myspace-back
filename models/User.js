@@ -14,8 +14,8 @@ const UserSchema = new Schema(
             unique: true,
             match: '/.+\@.+\..+/'
         },
-        thought: [ThoughSchema],
-        friends: []
+        thought: [ThoughtSchema],
+        friends: [ this ]
     }
 )
 
