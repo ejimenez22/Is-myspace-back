@@ -19,6 +19,7 @@
   "homepage": "https://github.com/ejimenez22/Is-myspace-back#readme",
   "dependencies": {
     "express": "^4.18.1",
+    "moment": "^2.29.3",
     "mongoose": "^6.3.5"
   }
 }
