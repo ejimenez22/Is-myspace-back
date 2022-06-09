@@ -7,14 +7,14 @@ const {
     removeReaction
 } = require('../../controllers/thoughts-controller')
 
-router.route('/:userId').post(addThought)
-
 router
-.route('/:userId/:thoughtId')
-.put(addReaction)
+.route('/api/thoughts')
+.post(addThought)
 .delete(removeThought)
 
 router
-.route('/:userId/:thoughtId/:reactionId').delete(removeReaction)
+.route('/api/thoughts/:thoughtId/reactions')
+.put(addReaction)
+.delete(removeReaction)
 
 module.exports = router
