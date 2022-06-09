@@ -54,6 +54,6 @@ ThoughtSchema.virtual('reaction').get(function() {
     return this.reactions.reduce((total, reactions) => total + reactions.length + 1, 0)
 })
 
-const Thoughts = model('Thoughts', ThoughtSchema)
+const Thought = model('Thoughts', ThoughtSchema)
 
-module.exports = Thoughts
+module.exports = Thought
