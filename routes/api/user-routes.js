@@ -17,8 +17,12 @@ router
 router
 .route('/:id')
 .get(getUserById)
-.put(addFriend)
 .delete(deleteUser)
+
+
+router
+.route(':userId/friends')
+.put(addFriend)
 .delete(removeFriend)
 
 module.exports = router
